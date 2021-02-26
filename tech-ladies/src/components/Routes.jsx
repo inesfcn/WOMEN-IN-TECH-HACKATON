@@ -13,6 +13,8 @@ function Routes() {
     setToggleDarkMode(!toggleDarkMode)
   }
 
+  console.log(toggleDarkMode);
+
   return (
     <>
     <Router>
@@ -21,9 +23,10 @@ function Routes() {
           {!toggleDarkMode && <img src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" alt="moon dark mode"/>}
           {toggleDarkMode && <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_3-512.png" alt="sun light mode"></img>}
           </div>
+        
         <nav>
 
-          <ul>
+          <ul className={toggleDarkMode&&"dark-mode-style"}>
             <li>
               <NavLink to="/" activeClassName="active-link" exact>Home</NavLink>
             </li>
@@ -53,7 +56,9 @@ function Routes() {
           </Route>
 
           <Route path="/community">
-            <Community/>
+            <Community
+            toggleDarkMode={toggleDarkMode}
+            />
           </Route>
 
           <Route path="/">

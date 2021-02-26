@@ -45,7 +45,7 @@ export default function HomePage({toggleDarkMode}){
         }
     </main>
 
-    <footer>
+    <footer className={toggleDarkMode&& "dark-mode-style"}>
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-youtube"></i>

@@ -267,7 +267,7 @@ a:hover {
 /* DARK MODE */
 .main-div {
   position: absolute;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .dark-mode {
@@ -288,5 +288,10 @@ a:hover {
 
 .dark-mode-main {
   background-color: rgb(41, 41, 41);
+  color: rgb(253, 253, 253);
+}
+
+.dark-mode-style,
+.dark-mode-style a {
   color: rgb(253, 253, 253);
 }
