@@ -1,13 +1,13 @@
 import React from "react";
 import communityPic from "../assets/community.jpeg";
 
-export default function Community(){
+export default function Community({toggleDarkMode}){
     return(
     <main>
         <div className="events-container">
             <div className="events-text">
                 <h1 className="events-title">Upcoming Events :</h1>
-                <ul>
+                <ul className={toggleDarkMode&& "dark-mode-style"}>
                 <li><a>Build your unique CV</a></li>
                 <li><a>Casual Fridays </a></li>
                 <li><a>Hackaton</a></li>

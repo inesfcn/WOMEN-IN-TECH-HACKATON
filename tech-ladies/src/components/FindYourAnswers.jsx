@@ -3,9 +3,9 @@ import threeWomenComputer from "../assets/3womencomputer.jpg"
 import twoWomenCode from "../assets/2womencode.jpg"
 import laughingComputer from "../assets/laughingcomputer.jpg"
 
-export default function FindYourAnswers(){
+export default function FindYourAnswers({toggleDarkMode}){
     return(
-    <main>
+    <main className={toggleDarkMode&& "dark-mode-main"}>
         <h1 className="answers-title">Find your answers :</h1>
         <ul className="answers-articles">
             <li><a><b>10 reasons why women should consider tech  career</b></a> </li>
