@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route,NavLink } from "react-router-dom";
 import HomePage from "./HomePage";
 import FindYourAnswers from "./FindYourAnswers"
@@ -7,11 +7,22 @@ import Inspirations from "./Inspirations"
 import "../App.css"
 
 function Routes() {
+  const [toggleDarkMode, setToggleDarkMode] = useState(false)
+
+  function handleToggle(){
+    setToggleDarkMode(!toggleDarkMode)
+  }
+
   return (
     <>
     <Router>
-      <div>
+      <div className={!toggleDarkMode?"main-div": "main-div dark-mode-main "}>
+        <div className="dark-mode" onClick={handleToggle}>
+          {!toggleDarkMode && <img src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" alt="moon dark mode"/>}
+          {toggleDarkMode && <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_3-512.png" alt="sun light mode"></img>}
+          </div>
         <nav>
+
           <ul>
             <li>
               <NavLink to="/" activeClassName="active-link" exact>Home</NavLink>
@@ -32,7 +43,9 @@ function Routes() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/findYourAnswers">
-            <FindYourAnswers/>
+            <FindYourAnswers
+            toggleDarkMode={toggleDarkMode}
+            />
           </Route>
 
           <Route path="/inspirations">
@@ -44,7 +57,9 @@ function Routes() {
           </Route>
 
           <Route path="/">
-            <HomePage/>
+            <HomePage
+            toggleDarkMode={toggleDarkMode}
+            />
           </Route>
         </Switch>
       </div>
