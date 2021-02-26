@@ -251,7 +251,7 @@ a:hover {
 }
 
 .answers-articles li {
-  margin: 20px 0px;
+  margin: 40px 0px 20px;
   font-size: 20px;
 }
 
@@ -294,4 +294,51 @@ a:hover {
 .dark-mode-style,
 .dark-mode-style a {
   color: rgb(253, 253, 253);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    padding-top: 10px;
+  }
+  .homepage {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .homepage-text {
+    width: 90%;
+    margin-right: 0;
+  }
+  .homepage-text h1 {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .homepage-img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .answers-articles img {
+    margin-bottom: 10px;
+  }
+  .events-container * {
+    margin: 0px 10px;
+  }
+  .events-container {
+    flex-direction: column-reverse;
+  }
+  .events-img {
+    width: 80%;
+    height: 100%;
+  }
+  .events-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
 }
