@@ -28,16 +28,16 @@ function Routes() {
 
           <ul className={toggleDarkMode&&"dark-mode-style"}>
             <li>
-              <NavLink to="/" activeClassName="active-link" exact>Home</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATON/" activeClassName="active-link" exact>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/findYourAnswers" activeClassName="active-link">Find your answers</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATON/findYourAnswers" activeClassName="active-link">Find your answers</NavLink>
             </li>
             <li>
-              <NavLink to="/inspirations" activeClassName="active-link">Inspirations</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATON/inspirations" activeClassName="active-link">Inspirations</NavLink>
             </li>
             <li>
-              <NavLink to="/community" activeClassName="active-link">Community</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATON/community" activeClassName="active-link">Community</NavLink>
             </li>
           </ul>
         </nav>
@@ -45,23 +45,23 @@ function Routes() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/findYourAnswers">
+          <Route path="/WOMEN-IN-TECH-HACKATON/findYourAnswers">
             <FindYourAnswers
             toggleDarkMode={toggleDarkMode}
             />
           </Route>
 
-          <Route path="/inspirations">
+          <Route path="/WOMEN-IN-TECH-HACKATON/inspirations">
             <Inspirations/>
           </Route>
 
-          <Route path="/community">
+          <Route path="/WOMEN-IN-TECH-HACKATON/community">
             <Community
             toggleDarkMode={toggleDarkMode}
             />
           </Route>
 
-          <Route path="/">
+          <Route path="/WOMEN-IN-TECH-HACKATON">
             <HomePage
             toggleDarkMode={toggleDarkMode}
             />
