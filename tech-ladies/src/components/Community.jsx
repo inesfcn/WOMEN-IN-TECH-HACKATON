@@ -10,7 +10,7 @@ export default function Community({toggleDarkMode}){
                 <ul className={toggleDarkMode&& "dark-mode-style"}>
                 <li><a>Build your unique CV</a></li>
                 <li><a>Casual Fridays </a></li>
-                <li><a>Hackaton</a></li>
+                <li><a>Hachathon</a></li>
                 <li><a>Python course</a></li>
                 <li><a>Webinar impostor syndrome</a></li> 
                 </ul>

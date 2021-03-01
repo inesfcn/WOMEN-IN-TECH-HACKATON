@@ -2,7 +2,7 @@
   "name": "tech-ladies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vbldra.github.io/WOMEN-IN-TECH-HACKATON/",
+  "homepage": "https://vbldra.github.io/WOMEN-IN-TECH-HACKATHON/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",

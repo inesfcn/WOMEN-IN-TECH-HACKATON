@@ -28,16 +28,16 @@ function Routes() {
 
           <ul className={toggleDarkMode&&"dark-mode-style"}>
             <li>
-              <NavLink to="/WOMEN-IN-TECH-HACKATON/" activeClassName="active-link" exact>Home</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATHON/" activeClassName="active-link" exact>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/WOMEN-IN-TECH-HACKATON/findYourAnswers" activeClassName="active-link">Find your answers</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATHON/findYourAnswers" activeClassName="active-link">Find your answers</NavLink>
             </li>
             <li>
-              <NavLink to="/WOMEN-IN-TECH-HACKATON/inspirations" activeClassName="active-link">Inspirations</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATHON/inspirations" activeClassName="active-link">Inspirations</NavLink>
             </li>
             <li>
-              <NavLink to="/WOMEN-IN-TECH-HACKATON/community" activeClassName="active-link">Community</NavLink>
+              <NavLink to="/WOMEN-IN-TECH-HACKATHON/community" activeClassName="active-link">Community</NavLink>
             </li>
           </ul>
         </nav>
@@ -45,23 +45,23 @@ function Routes() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/WOMEN-IN-TECH-HACKATON/findYourAnswers">
+          <Route path="/WOMEN-IN-TECH-HACKATHON/findYourAnswers">
             <FindYourAnswers
             toggleDarkMode={toggleDarkMode}
             />
           </Route>
 
-          <Route path="/WOMEN-IN-TECH-HACKATON/inspirations">
+          <Route path="/WOMEN-IN-TECH-HACKATHON/inspirations">
             <Inspirations/>
           </Route>
 
-          <Route path="/WOMEN-IN-TECH-HACKATON/community">
+          <Route path="/WOMEN-IN-TECH-HACKATHON/community">
             <Community
             toggleDarkMode={toggleDarkMode}
             />
           </Route>
 
-          <Route path="/WOMEN-IN-TECH-HACKATON">
+          <Route path="/WOMEN-IN-TECH-HACKATHON">
             <HomePage
             toggleDarkMode={toggleDarkMode}
             />
